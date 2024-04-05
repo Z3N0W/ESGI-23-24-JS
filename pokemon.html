@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokemon.css">
+    <title>Liste de Pokémon</title>
+</head>
+<body class="background-image">
+    <div class="screen">
+        <div class="card">
+            <img class="logo" src="images/pokedex.png">
+            <!-- Modification du formulaire pour éviter le rechargement de la page -->
+            <div class="search-pokemon" id="pokemon-search-form">
+                <label for="pokemon-input" class="text-search"></label><br>
+                <input type="text" id="pokemon-input" name="pokemon-input" placeholder="Nom ou ID">
+                <!-- Bouton retiré, la recherche sera déclenchée sur l'événement input -->
+            </div>
+            <!-- Container pour les cartes Pokémon -->
+            <div id="pokemonList"></div>
+        </div>
+    </div>
+    
+    <!-- Détails du Pokémon affichés dans une fenêtre modale -->
+    <div id="detailedPokemonCard" class="modal">
+        <!-- La carte détaillée du Pokémon sera injectée ici -->
+    </div>
+
+    <script src="pokemon.js"></script>
+</body>
+</html>
